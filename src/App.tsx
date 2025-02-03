@@ -6,19 +6,19 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 
 function AppContent() {
   const location = useLocation();
-  const isLoginRoute = location.pathname === '/Eccomerce-template/Login';
+  const isLoginRoute = location.pathname === '/Eccomerce-template/login';
 
   return (
     <>
-      { !isLoginRoute && (
-        <Navbar  />
+      {!isLoginRoute && (
+        <Navbar />
       )}
 
 
-<Routes>
-<Route path="/Eccomerce-template" element={<Home />} />
-<Route path="/Eccomerce-template/login" element={<Login />} />
-            </Routes>
+      <Routes>
+        <Route path="/Eccomerce-template" element={<Home />} />
+        <Route path="/Eccomerce-template/login" element={<Login />} />
+      </Routes>
 
     </>
   );

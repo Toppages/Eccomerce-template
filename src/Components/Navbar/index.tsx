@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
+import { useState, useMemo } from 'react';
 import { IconUser, IconShoppingCart, IconMoonStars, IconSun } from '@tabler/icons-react';
 import { ActionIcon, Card, Group, Title, Burger, Drawer, useMantineColorScheme, useMantineTheme } from '@mantine/core';
 
@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <>
-      <Card shadow="sm" p="lg" style={{ backgroundColor: dark ? '#1A1B1E' : theme.colors.gray[0] }}>
+      <Card shadow="sm" p="lg" style={{ backgroundColor: dark ? '#020203' : '#F3FAF7' }}>
         {!isMobile && (
           <Burger
             opened={opened}
@@ -39,20 +39,19 @@ function Navbar() {
           <Title order={1} align={isMobile ? "left" : "center"}>Logo</Title>
 
           <Group spacing="lg" position={isMobile ? "apart" : "center"}>
-            <ActionIcon color={dark ? 'yellow' : 'dark'} radius="xl">
+            <ActionIcon  radius="xl">
               <IconUser color={dark ? '#FBC403' : 'black'} size={34} />
             </ActionIcon>
 
-            <ActionIcon color={dark ? 'yellow' : 'dark'} radius="xl">
+            <ActionIcon  radius="xl">
               <IconShoppingCart color={dark ? '#FBC403' : 'black'} size={34} />
             </ActionIcon>
 
             <ActionIcon
-              color={dark ? 'yellow' : 'dark'}
               onClick={() => toggleColorScheme()}
               title="Toggle color scheme"
             >
-              {dark ? <IconSun size={34} color='#FBC403' /> : <IconMoonStars size={34} />}
+              {dark ? <IconSun size={34} color='#FBC403' /> : <IconMoonStars size={34}  color='black' />}
             </ActionIcon>
           </Group>
         </Group>

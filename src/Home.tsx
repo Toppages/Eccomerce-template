@@ -1,10 +1,11 @@
-
-
+import Carrouselbaner from "./Components/CarrouselBanner/Index";
+import MostProductS from "./Components/MostProductS/Index";
 function Home() {
-  
+
   return (
     <>
-   hols
+      <Carrouselbaner />
+      <MostProductS />
     </>
   );
 }

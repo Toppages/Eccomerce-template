@@ -5,11 +5,9 @@ import App from './App.tsx'
 import { MantineProvider, ColorSchemeProvider } from '@mantine/core';
 import { useLocalStorage } from '@mantine/hooks';
 
-// Definir tipo explícito para colorScheme
 type ColorSchemeType = 'light' | 'dark';
 
 function Root() {
-  // Garantizar que el tipo de colorScheme sea el correcto
   const [colorScheme, setColorScheme] = useLocalStorage<ColorSchemeType>({
     key: 'mantine-color-scheme',
     defaultValue: 'light',
@@ -39,7 +37,7 @@ function Root() {
           primaryColor: colorScheme === 'dark' ? 'dark' : 'light',
           globalStyles: (theme) => ({
             body: {
-              backgroundColor: colorScheme === 'light' ? '#FBFCD4' : theme.colorScheme === 'dark' ? '#1A1B1E' : '',
+              backgroundColor: colorScheme === 'light' ? '#c1c1c1' : theme.colorScheme === 'dark' ? '#1a1b1e' : '',
             },
           }),
         }}
