@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <>
-      <Card shadow="sm" p="lg" style={{ backgroundColor: dark ? '#020203' : '#F3FAF7' }}>
+      <Card shadow="sm" p="lg" radius='xs' style={{ backgroundColor: dark ? '#020203' : '#F3FAF7' }}>
         {!isMobile && (
           <Burger
             opened={opened}
