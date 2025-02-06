@@ -37,7 +37,7 @@ function Root() {
           primaryColor: colorScheme === 'dark' ? 'dark' : 'light',
           globalStyles: (theme) => ({
             body: {
-              backgroundColor: colorScheme === 'light' ? '#c1c1c1' : theme.colorScheme === 'dark' ? '#1a1b1e' : '',
+              backgroundColor: colorScheme === 'light' ? '#F2F2F2' : theme.colorScheme === 'dark' ? '#1a1b1e' : '',
             },
           }),
         }}
