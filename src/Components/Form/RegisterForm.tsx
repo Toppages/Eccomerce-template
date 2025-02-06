@@ -1,10 +1,10 @@
+// RegisterForm.jsx
 import { useState } from 'react';
 import { TextInput, PasswordInput, Button, Text } from '@mantine/core';
 import { useNavigate } from 'react-router-dom';
 
 function RegisterForm() {
   const navigate = useNavigate();
-
   const [name, setName] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
