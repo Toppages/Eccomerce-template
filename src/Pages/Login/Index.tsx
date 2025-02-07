@@ -33,7 +33,7 @@ function Login() {
       maxWidth: 400,
       paddingTop: 80,
   
-      [theme.fn.smallerThan(500)]: { // Se usa el número directamente
+      [theme.fn.smallerThan(500)]: {
         maxWidth: '100%',
       },
     },
