@@ -6,14 +6,14 @@ import './CarrouselBanner.scss';
 
 function CarrouselBanner() {
   const images = [
-    'https://placehold.co/1600x600',
-    'https://placehold.co/1600x600',
-    'https://placehold.co/1600x600'
+    'https://placehold.co/1079x200',
+    'https://placehold.co/1079x200',
+    'https://placehold.co/1079x200',
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showControls, setShowControls] = useState(false);
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme } = useMantineColorScheme();
   const dark = useMemo(() => colorScheme === 'dark', [colorScheme]);
   useEffect(() => {
     const interval = setInterval(() => {

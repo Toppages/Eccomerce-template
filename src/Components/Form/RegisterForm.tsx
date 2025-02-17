@@ -16,7 +16,7 @@ function RegisterForm() {
       return;
     }
     setError('');
-    navigate('/Eccomerce-template');
+    navigate('/');
   };
 
   return (

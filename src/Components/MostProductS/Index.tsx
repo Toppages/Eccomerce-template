@@ -55,7 +55,7 @@ function MostProduct() {
     { title: "Texto", image: "https://placehold.co/300x350", price: "xxxx" },
   ];
 
-  const { colorScheme, toggleColorScheme } = useMantineColorScheme();
+  const { colorScheme } = useMantineColorScheme();
   const dark = useMemo(() => colorScheme === 'dark', [colorScheme]);
   return (
     <div

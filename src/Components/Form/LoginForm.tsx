@@ -16,7 +16,7 @@ function LoginForm() {
     }
     setError('');
     setTimeout(() => {
-      navigate('/Eccomerce-template');
+      navigate('/');
     }, 200);
   };
 

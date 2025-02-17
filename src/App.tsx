@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 
 function AppContent() {
   const location = useLocation();
-  const isLoginRoute = location.pathname === '/Eccomerce-template/login';
+  const isLoginRoute = location.pathname === '/login';
 
   return (
     <>
@@ -16,8 +16,8 @@ function AppContent() {
 
 
       <Routes>
-        <Route path="/Eccomerce-template" element={<Home />} />
-        <Route path="/Eccomerce-template/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
 
     </>

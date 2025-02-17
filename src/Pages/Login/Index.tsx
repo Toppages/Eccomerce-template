@@ -28,9 +28,8 @@ function Login() {
       backgroundPosition: "left",
     },
     form: {
-      borderRight: `16px solid ${theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.colors.gray[3]}`,
       minHeight: `calc(${size.height}px)`,
-      maxWidth: 400,
+      maxWidth: 410,
       paddingTop: 80,
   
       [theme.fn.smallerThan(500)]: {
